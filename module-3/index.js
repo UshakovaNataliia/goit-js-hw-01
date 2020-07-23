@@ -16,8 +16,6 @@
 //     console.log(`${key}: ${value}`);
 //   }
 
-// Ну или так :)
-// console.log(Object.entries(user));
 
 
 //______________task-2________________
