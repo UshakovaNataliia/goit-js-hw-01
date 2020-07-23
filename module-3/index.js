@@ -119,8 +119,6 @@
 // let newArr = [];
 // for (let el of arr) {
 //   el[prop] && newArr.push(el[prop]);
-// // Или второй вариант:
-//  // el[prop] ? newArr.push(el[prop]) : '';
 // }
 // return newArr;
 // };
