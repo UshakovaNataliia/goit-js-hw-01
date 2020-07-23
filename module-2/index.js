@@ -56,7 +56,6 @@
 // str.push("...");
 // str = str.join("");
 // return string.length <= 40 ? string : str;
-//     //// return string.length <= 40 ? string : string.split('').splice(40).push('...').join(' ');
 
 // };
 
