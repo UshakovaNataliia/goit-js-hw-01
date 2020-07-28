@@ -161,3 +161,121 @@
 // Напишите ф-цию, которая примает аргументами 2 числа,  задающих диапазон который нужно вывести в консоль
 // если в числе есть 3 - в консоль вместо него выводиться "three"
 // (то есть вместо 3, 13, 23 и т.д. должно быть "three")
+
+
+// 27.07
+//#1
+//  const ShowMeTheHotel = function (name, capacity, stars) {
+//     this.name = name;
+//     this.capacity = capacity;
+//     this.stars = stars;
+//     this.greet = function() {
+//         console.log(`Hello at ${this.name}`)
+//     }
+//     this.order = function(n) {
+// if(n<this.capacity) { 
+//     this.capacity -= n;
+//     console.log(`you booked ${n} apartments at ${this.name}`)
+  
+// } else( console.log('we have no appartments for you'));
+//     }
+// }
+// let Hayyat = new ShowMeTheHotel('Hayat', 500, 5);
+// let Hilton = new ShowMeTheHotel('Hilton', 200, 5)
+
+
+// Hayyat.greet();
+// Hayyat.order(1);
+// Hayyat.order(50);
+
+
+// Hilton.greet();
+// Hilton.order(10);
+
+// console.log(Hayyat)
+
+
+
+
+// записать в статистику информацию о продажах и показать, что купили
+// let storeStatistics ={
+//   tshirtSold: 0,
+//   jacketSold: 0,
+//   socksSold: 0,
+
+// };
+// const SellSomething = function (type, color, size) {
+//   this.type = type;
+//   this.color = color;
+//   this.size = size;
+//   this.order = function(n) {
+//     console.log(`You bought ${n} ${type}, color: ${color}, size: ${size}`);
+//   this.type === 'tshirt' ? storeStatistics.tshirtSold += n :
+//   this.type === 'jacket' ? storeStatistics.jacketSold+=n :
+//   this.type === 'socks' ? storeStatistics.socksSold+=n : '';
+//   }
+// }
+
+// let tshirtSold = new SellSomething('tshirt', 'blue', 'm')
+// tshirtSold.order(10);
+// let jacketSold = new SellSomething('jacket', 'green', 'l')
+// jacketSold.order(5);
+// let socksSold = new SellSomething('socks', 'red', '40')
+// socksSold.order(2);
+// console.log(storeStatistics);
+
+
+
+
+
+
+
+// let myGlobalStatistic = {
+//   lightArmor: 0,
+//   chainMail: 0,
+//   scaleArmor: 0,
+// };
+
+// let myDayStatistic = {
+//   lightArmor: 0,
+//   chainMail: 0,
+//   scaleArmor: 0,
+// };
+
+// const SellSomething = function (color, size, type) {
+//   this.color = color;
+//   this.size = size;
+//   this.type = type;
+
+//   this.buyNow = function (num) {
+//     for (let el in myDayStatistic) {
+//       if (el === type) {
+//         myDayStatistic[el] = myDayStatistic[el] + num;
+//         console.log(
+//           `Your order are ${myDayStatistic[el]} ${this.color} ${this.type} with size: ${this.size}`
+//         );
+//         console.log(`My day stat for ${el}: ${myDayStatistic[el]}`);
+//       }
+//     }
+//   };
+//   this.boughtStatistic = function (num) {
+//     for (let el in myGlobalStatistic) {
+//       if (el === type) {
+//         myGlobalStatistic[el] = myGlobalStatistic[el] + num;
+//         console.log(`My global stat for ${el}: ${myGlobalStatistic[el]}`);
+//       }
+//     }
+//   };
+// };
+
+// const leatherJackets = new SellSomething("brown", "medium", "lightArmor");
+// leatherJackets.buyNow(50);
+// leatherJackets.buyNow(300);
+// leatherJackets.boughtStatistic(500);
+
+// const Hauberk = new SellSomething("steel", "medium", "chainMail");
+// Hauberk.buyNow(200);
+// Hauberk.buyNow(10);
+// Hauberk.buyNow(20);
+// Hauberk.boughtStatistic(300);
+
