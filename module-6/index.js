@@ -30,6 +30,7 @@
 
 
 // Задание 3
+
 // Получить массив имен пользователей по полу (поле gender).
 
 // const getUsersWithGender = (users, gender) => {
