@@ -1,6 +1,25 @@
-/* .smallBox {
-    margin: 0 auto;
-    width: 20px;
-    height: 20px;
+/* task3 */
+.img {
+  vertical-align: middle;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  width: 800px;
+};
 
-} */
+
+
+
+ /* task6 */
+
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
