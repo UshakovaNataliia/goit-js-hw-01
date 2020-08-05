@@ -20,9 +20,7 @@
 
 // let ul = document.querySelector('ul#ingredients');
 // ingredients.map(el => ul.appendChild(document.createElement('li')).textContent=el);
-
 // console.log(ul);
-
 
 
 
@@ -75,29 +73,29 @@
 
 // Задание 4
   
-const deletedNumber = document.querySelector('button[data-action="decrement"]');
-const addedNumber = document.querySelector('button[data-action="increment"]');
-let value = document.querySelector("#value");
-let counterValue = 0;
+// const deletedNumber = document.querySelector('button[data-action="decrement"]');
+// const addedNumber = document.querySelector('button[data-action="increment"]');
+// let value = document.querySelector("#value");
+// let counterValue = 0;
 
-let increment = () => {
-  updateData('increment');
-  updateSpan();
-}
-let decrement = () => {
-  updateData('decrement');
-  updateSpan();
-}
-let updateData = (str) => {
-  str === 'increment' ? counterValue++ : counterValue--;
-} 
+// let increment = () => {
+//   updateData('increment');
+//   updateSpan();
+// }
+// let decrement = () => {
+//   updateData('decrement');
+//   updateSpan();
+// }
+// let updateData = (str) => {
+//   str === 'increment' ? counterValue++ : counterValue--;
+// } 
 
-deletedNumber.addEventListener("click", decrement);
-addedNumber.addEventListener("click", increment);
+// deletedNumber.addEventListener("click", decrement);
+// addedNumber.addEventListener("click", increment);
 
-let updateSpan = () => {
-  value.textContent = counterValue;
-}
+// let updateSpan = () => {
+//   value.textContent = counterValue;
+// }
 
 
 
