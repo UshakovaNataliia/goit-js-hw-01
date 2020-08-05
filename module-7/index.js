@@ -1,10 +1,9 @@
 // Задание 1
 
-// let categories = document.querySelector('ul#categories').children.length;
-// console.log(`В списке ${categories} категории`);
-// let items = document.querySelectorAll('.item');
+// let items = document.querySelectorAll('#categories .item');
+// console.log(`В списке ${items.length} категории`);
 // items.forEach(item => console.log(`Категория: ${item.children[0].textContent}
-// Количество элементов: ${item.querySelector('ul').children.length} `));
+// Количество элементов: ${item.children[1].children.length} `));
 
 
 
@@ -20,7 +19,7 @@
 // ];
 
 // let ul = document.querySelector('ul#ingredients');
-// ingredients.forEach(el => ul.appendChild(document.createElement('li')).textContent=el);
+// ingredients.map(el => ul.appendChild(document.createElement('li')).textContent=el);
 
 // console.log(ul);
 
@@ -76,14 +75,30 @@
 
 // Задание 4
   
-// const deletedNumber = document.querySelector('button[data-action="decrement"]');
-// const addedNumber = document.querySelector('button[data-action="increment"]');
-// const counterValue = document.querySelector("#value");
+const deletedNumber = document.querySelector('button[data-action="decrement"]');
+const addedNumber = document.querySelector('button[data-action="increment"]');
+let value = document.querySelector("#value");
+let counterValue = 0;
 
-// deletedNumber.addEventListener("click", decrement => {counterValue.textContent -= 1});
-// addedNumber.addEventListener("click", increment => {counterValue.textContent = Number(counterValue.textContent) + 1});
 
-// // Почему decrement(т.е. -=1) работает и в такой записи, а increment(+=) только с Number?
+
+let increment = () => {
+  updateData('increment');
+  updateSpan();
+}
+let decrement = () => {
+  updateData('decrement');
+  updateSpan();
+}
+let updateData = (str) => {
+  str === 'increment' ? counterValue++ : counterValue--;
+} 
+deletedNumber.addEventListener("click", decrement);
+addedNumber.addEventListener("click", increment);
+
+let updateSpan = () => {
+  value.textContent = counterValue;
+}
 
 
 

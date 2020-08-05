@@ -150,8 +150,78 @@
 
 // 5/08
 
-/*
+/* 1
   Дан список изображений. Сделайте так, чтобы по клику на картинку 
   алертом выводился ее src. Обязательно используйте делегирование событий.
 */
-https://picsum.photos/
+// https://picsum.photos/
+
+// https://picsum.photos/id/237/200/300
+
+// let container = document.querySelector('.img');
+// console.log(container);
+
+// function show (evt) {
+//   console.log(evt.target.src, evt.target.alt);
+// }
+// container.addEventListener('click', show)
+
+
+
+
+
+
+
+// let gallery = document.querySelector('.gallery')
+// console.log(gallery);
+// for(let i=0; i<5; i+=1){
+//   gallery.innerHTML += `<li><img src='https://picsum.photos/id/${i}/200/300'></li>`;
+// }
+// // li.style.marginRight = '20px';
+// gallery.addEventListener('click', (e) => {
+//   if(e.target.nodeName === 'IMG'){
+//     alert(e.target.src);
+//   }
+// });
+
+
+
+
+
+
+
+
+
+
+/*2
+  Дан ul, а внутри него произвольное количество li с текстом и кнопкой. 
+  Сделайте так, чтобы по нажатию на кнопку, удалялся тот li в котором
+  она находится. Обязательно используйте делегирование событий.
+*/
+
+
+// let div = document.querySelector('.list');
+// console.log(div);
+
+// let btn = div.querySelectorAll('button[data-action = 'delete']');
+// console.log(btn);
+
+// let li = div.querySelectorAll('li');
+// console.log(li);
+
+// function deleteLi(event){
+// if(event.target.nodeName === 'BUTTON'){
+
+// }
+// }
+
+
+
+// 3  
+// Дан набор инпутов. Сделайте так, чтобы при потере фокуса все 
+  // инпуты проверяли свое содержимое на правильное количество символов. 
+  
+  // - Сколько символов должно быть в инпуте, указывается в атрибуте data-length. 
+  // - Если введено подходящее количество, то outline инпута становится зеленым, 
+  //   если неправильное - красным. Для добавления стилей, на вкладке CSS есть стили valid и invalid
+
