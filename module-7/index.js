@@ -80,8 +80,6 @@ const addedNumber = document.querySelector('button[data-action="increment"]');
 let value = document.querySelector("#value");
 let counterValue = 0;
 
-
-
 let increment = () => {
   updateData('increment');
   updateSpan();
@@ -93,6 +91,7 @@ let decrement = () => {
 let updateData = (str) => {
   str === 'increment' ? counterValue++ : counterValue--;
 } 
+
 deletedNumber.addEventListener("click", decrement);
 addedNumber.addEventListener("click", increment);
 
