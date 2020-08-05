@@ -18,9 +18,18 @@
 //   'Приправы',
 // ];
 
-// let ul = document.querySelector('ul#ingredients');
-// ingredients.map(el => ul.appendChild(document.createElement('li')).textContent=el);
-// console.log(ul);
+// const ul = document.querySelector('#ingredients');
+
+// const list = el => {
+//   const title = document.createElement('li');
+//   title.textContent = el;
+//   return title;
+// };
+
+// const ingred = ingredients.map(el => list(el));
+
+// ul.append(...ingred);
+
 
 
 
