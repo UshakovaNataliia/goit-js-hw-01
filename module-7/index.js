@@ -47,6 +47,7 @@
 //   },
 // ];
 
+
 // // Вариант без insertAdjacentHTML()
 // const gallery = document.querySelector('#gallery');
 
@@ -100,13 +101,6 @@
 
 
 // Задание 6
-// Напиши скрипт, который бы при потере фокуса на инпуте, проверял его содержимое 
-// на правильное количество символов.
-
-
-// Сколько символов должно быть в инпуте, указывается в его атрибуте data-length.
-// Если введено подходящее количество, то border инпута становится зеленым, 
-// если неправильное - красным. Для добавления стилей, используй CSS-классы valid и invalid.
 
   
 // const input = document.querySelector('#validation-input');
@@ -114,9 +108,9 @@
 // input.addEventListener('blur', blur);
 // input.addEventListener('focus', focus);
 
-// function blur(ev) {
-//   const inputValue = ev.target.value.length;
-//   const length = +ev.target.getAttribute('data-length');
+// function blur(evt) {
+//   const inputValue = evt.target.value.length;
+//   const length = +evt.target.getAttribute('data-length');
 //   length === inputValue ? input.classList.add('valid') : input.classList.add('invalid');
 // }
 // function focus() {
@@ -133,28 +127,12 @@
 // input.addEventListener('input', (ev) => textSize.style.fontSize = `${ev.target.value}px`);
 
 
-// // ?????
-// // const inputValueRef = document.querySelector("#validation-input");
-// // const refreshButtonRef = document.querySelector(".btn-task06");
-// // refreshButtonRef.addEventListener("click", clearInput);
-// // inputValueRef.addEventListener("blur", blur);
- 
-// // function clearInput() {
-// //   inputValueRef.value = "";
-// //   inputValueRef.classList.remove("invalid", "valid");
-// // }
-// // function blur() {
-// //   const eT = event.target;
-// //   if (eT.value.length === 6) {
-// //     inputValueRef.classList.remove("invalid");
 
-// //     inputValueRef.classList.add("valid");
-// //   } else if (eT.value.length === 0) {
-// //     inputValueRef.classList.remove("invalid", "valid");
-// //   } else {
-// //     inputValueRef.classList.add("invalid");
-// //   }
-// // }
+
+
+
+
+
 
 
 
